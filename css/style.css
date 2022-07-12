@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Bold.eot');
+    src: local('TT Lakes Bold'), local('../fonts/TTLakes-Bold'),
+    url('../fonts/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Bold.woff') format('woff'),
+    url('../fonts/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('../fonts/TTLakes-Medium'),
+    url('../fonts/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Medium.woff') format('woff'),
+    url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('../fonts/TTLakes-Regular'),
+    url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TTLakes-Regular.woff') format('woff'),
+    url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "TT Lakes", sans-serif;
+}
+
+.wrapper{
+    width: 320px;
+    margin: 0 auto;
+    /*background: #efd5d5;*/
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    /*align-items: center;*/
+}
+
+.header__col-right label{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.header__actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__col-right,
+.header__col-center,
+.header__col-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__col-left{
+    width: 155px;
+}
+
+.header__col-right{
+    width: 96px;
+    position: relative;
+}
+
+.header__col-right::before{
+    display: block;
+    content: "";
+    width: 2px;
+    position: absolute;
+    left: -20px;
+    top: 4px;
+    bottom: 4px;
+    background: #EAEAEA;
+}
+
+.header__col-center{
+    display: none;
+}
+
+.button {
+    font-family: "TT Lakes", sans-serif;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+/*.button:focus-visible{*/
+/*    outline: 2px solid #B8FFEC;*/
+/*    border-radius: 50%;*/
+
+/*}*/
+
+.header__burger-btn {
+    background: url("../img/burger.svg");
+}
+
+.header__call-btn {
+    background: url("../img/call.svg");
+}
+
+.header__chat-btn {
+    background: url("../img/chat.svg");
+}
+
+.header__profile-btn {
+    background: url("../img/profile.svg");
+}
+
+.header__repair-btn {
+    background: url("../img/repair.svg");
+}
+
+.header__check-status-btn {
+    background: url("../img/checkstatus.svg");
+}
+
+.header__title{
+    font-size: 28px;
+    text-align: left;
+    letter-spacing: -0.6px;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.header__title::before{
+    position: absolute;
+    content: "";
+    left: -15px;
+    top: -1px;
+    bottom: -1px;
+    width: 4px;
+    background-color: #41F6D7;
+    border-radius: 0 20px 20px 0;
+}
+
+.header__nav{
+    display: flex;
+    overflow: scroll;
+    width: 300px;
+}
+
+.header__nav-item{
+    font-weight: 500;
+    font-size: 16px;
+    background: none;
+    padding: 10px;
+    margin: 2px 2px;
+    height: 40px;
+    flex: 0 0 auto;
+    color:#7E7E82;
+    text-decoration: none;
+}
+
+.header__nav-item:hover{
+    outline: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+
+.about-us__text{
+    padding: 0 15px;
+    /*margin-bottom: 20px;*/
+}
+
+.about-us__wrapper{
+    height: 88px;
+    overflow: hidden;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    font-size: 14px;
+}
+.about-us__wrapper p:first-of-type{
+    margin-bottom: 20px;
+}
+
+.about-us__show-more{
+    font-family: "TT Lakes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    padding: 5px 5px 5px 20px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.about-us__show-more:hover{
+    outline: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+.about-us__show-more:before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("../img/expand.svg") no-repeat 50% 50%;
+    position: absolute;
+    left: 5px;
+    top: 30%;
+}
+
+.about-us__image{
+    background: url("../img/banner-small.jpg");
+    width: 320px;
+    height: 176px;
+}
+
+
+@media (min-width: 768px) {
+    .wrapper{
+        width: 768px;
+    }
+
+    .header{
+        padding: 25px;
+    }
+
+    .header__col-center{
+        width: 152px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: 40px ;
+    }
+
+    .header__col-right::before{
+        left: -20px;
+    }
+
+    .header__nav{
+        width: 768px;
+    }
+    .header__title::before{
+        left: -25px;
+    }
+
+    .about-us{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about-us__text{
+        flex: 0 1 auto;
+        width: 332px;
+    }
+
+    .about-us__wrapper{
+        line-height: 20px;
+        height: 158px;
+    }
+
+    .about-us__image{
+        height: 208px;
+        width: 360px;
+        background: url("../img/banner-middle.jpg") no-repeat;
+        flex: 0 0 auto;
+    }
+}
+@media (min-width: 1120px){
+    .wrapper{
+        width: 1120px;
+    }
+
+    .header{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .header__title{
+        order: -1;
+    }
+
+    .header__col-center{
+        display: none;
+    }
+    .header__col-left{
+        display: none;
+    }
+
+    .header__col-right{
+        width: auto;
+    }
+
+    .header__col-right label{
+        width: auto;
+        height: auto;
+        overflow: auto;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .header__col-right label:hover{
+        color:#41F6D7;
+    }
+
+    .header__col-right::before{
+        display: none;
+    }
+
+    .header__col-right button{
+        margin-left: 8px;
+    }
+
+    .header__col-right button:first-of-type{
+        margin-right: 32px;
+    }
+
+    .header__nav{
+        width: 1063px;
+        overflow: auto;
+        flex-wrap: wrap;
+    }
+    .about-us__image{
+        height: 383px;
+        width: 531px;
+        background: url("../img/banner.jpg") no-repeat;
+        flex: 0 0 auto;
+    }
+    .about-us__text{
+        width: 490px;
+    }
+}
