@@ -3,58 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Услуги и сервисы</title>
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
+        <h1 class="header__title">Услуги и сервисы</h1>
         <div class="header__actions">
             <div class="header__col-left">
-                <button class="header__burger-btn button" type="button" data-message="Меню">
-                    <img src="img/burger.svg" alt="Меню">
+                <button class="header__btn button" type="button">
+                    <img class="header__btn-icon" src="img/burger.svg" alt="Меню">
                 </button>
                 <a href="#" class="logo">
                     <img src="img/logo.svg" alt="Логотип">
                 </a>
             </div>
             <div class="header__col-center">
-                <button class="header__call-btn button" type="button">
-                    <img src="img/call.svg" alt="Заказать звонок">
+                <button class="header__btn button" type="button">
+                    <img class="header__btn-icon" src="img/call.svg" alt="Заказать звонок">
                 </button>
-                <button class="header__chat-btn button" type="button">
-                    <img src="img/chat.svg" alt="Обратная связь">
+                <button class="header__btn button" type="button">
+                    <img class="header__btn-icon" src="img/chat.svg" alt="Обратная связь">
                 </button>
-                <a href="#" class="header__profile-btn button">
-                    <img src="img/profile.svg" alt="Личный кабинет">
+                <a href="#" class="header__btn button">
+                    <img class="header__btn-icon" src="img/profile.svg" alt="Личный кабинет">
                 </a>
             </div>
             <div class="header__col-right">
-                <label for="header__repair-btn"><span>Оставить заявку</span>
-                    <a href="#" id="header__repair-btn" class="header__repair-btn button">
-                        <img src="img/repair.svg" alt="Статус ремонта">
-                    </a>
-                </label>
-
-                <label for="header__check-status-btn"><span>Статус ремонта</span>
-                    <a href="#" id="header__check-status-btn" class="header__check-status-btn button">
-                        <img src="img/checkstatus.svg" alt="Статус ремонта">
-                    </a>
-                </label>
-
+                <a href="#" class="header__btn">
+                    <span class="header__btn-desc">Оставить заявку</span>
+                    <span class="button">
+                        <img class="header__btn-icon" src="img/repair.svg" alt="Статус ремонта">
+                    </span>
+                </a>
+                <a href="#" class="header__btn">
+                    <span class="header__btn-desc">Статус ремонта</span>
+                    <span class="button">
+                        <img class="header__btn-icon" src="img/checkstatus.svg" alt="Статус ремонта">
+                    </span>
+                </a>
             </div>
         </div>
-        <h1 class="header__title">Услуги и сервисы</h1>
     </header>
     <nav class="nav">
         <ul class="nav__items">
-            <li class="nav__item"><a href="#">Ремонтируемые устройства</a></li>
-            <li class="nav__item"><a href="#">Ремонтируемые бренды</a></li>
-            <li class="nav__item"><a href="#">Цены на услуги</a></li>
-            <li class="nav__item"><a href="#">Адреса сервисных центров</a></li>
-            <li class="nav__item"><a href="#">Специальные цены</a></li>
-            <li class="nav__item"><a href="#">Отзывы</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Ремонтируемые устройства</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Ремонтируемые бренды</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Цены на услуги</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Адреса сервисных центров</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Специальные цены</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
         </ul>
     </nav>
     <article class="about-us">
@@ -70,7 +70,7 @@
             </div>
             <button class="about-us__btn">Читать далее</button>
         </div>
-        <img src="img/banner.jpg" class="about-us__image">
+        <img src="img/banner.jpg" class="about-us__image" alt="баннер">
     </article>
 </div>
 </body>
