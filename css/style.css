@@ -179,7 +179,7 @@ button:focus-visible, a:focus-visible {
     padding: 2px;
     list-style-type: none;
     -ms-overflow-style: none; /* IE и Edge */
-    scrollbar-width: none; /* Firefox */
+    /*scrollbar-width: none; */
 }
 
 .nav__items::-webkit-scrollbar {
