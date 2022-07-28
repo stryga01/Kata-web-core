@@ -43,13 +43,12 @@ html {
 }
 
 button:focus-visible, a:focus-visible {
-    /*display: inline-block;*/
     outline: 2px solid #275649;
 }
 
 
 .wrapper {
-    min-width: 320px;
+    width: 320px;
     margin: 0 auto;
     position: relative;
 }
@@ -427,7 +426,7 @@ button:focus-visible, a:focus-visible {
 
 @media (min-width: 768px) {
     .wrapper {
-        min-width: 768px;
+        width: 768px;
     }
 
     .wrapper::before {
@@ -507,8 +506,7 @@ button:focus-visible, a:focus-visible {
 
 @media (min-width: 1120px) {
     .wrapper {
-        min-width: 1120px;
-        max-width: 1366px;
+        width: 1120px;
         padding: 0 25px;
     }
 
@@ -524,7 +522,8 @@ button:focus-visible, a:focus-visible {
     }
 
     .header__title {
-
+        display: flex;
+        align-items: center;
     }
 
     .header__col-center {
