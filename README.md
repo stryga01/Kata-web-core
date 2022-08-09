@@ -1,6 +1,6 @@
-# block 1.4
+# block 1.5
 
-https://stryga01.github.io/git-kata/side-menu/
+https://stryga01.github.io/git-kata/slider/
 
 
 
