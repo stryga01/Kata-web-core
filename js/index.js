@@ -34,17 +34,14 @@ breakpointChecker();
 
 let sliderBtn = document.querySelector(".slider__btn");
 let brandList = document.querySelector(".slider__wrapper");
-let sliderBtnIcon = document.querySelector('.slider__btn-icon');
-let sliderBtnText = sliderBtn.querySelector('.slider__btn-text');
-
 
 sliderBtn.addEventListener("click", (e)=>{
-    brandList.classList.toggle('slider__wrapper_hidden');
-    sliderBtnIcon.classList.toggle('slider__btn-icon_show');
+    brandList.classList.toggle('slider__wrapper_closed');
+    sliderBtn.classList.toggle('slider__btn_show');
 
-    if(sliderBtnIcon.classList.contains('slider__btn-icon_show')){
-        sliderBtnText.innerText = "Скрыть"
+    if(sliderBtn.classList.contains('slider__btn_show')){
+        sliderBtn.innerText = "Скрыть"
     } else {
-        sliderBtnText.innerText = "Показать все"
+        sliderBtn.innerText = "Показать все"
     }
 })
